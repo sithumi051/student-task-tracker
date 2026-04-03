@@ -2,6 +2,7 @@ const addTaskBtn = document.getElementById("addTaskBtn");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 const taskCount = document.getElementById("taskCount");
+const clearAllBtn = document.getElementById("clearAllBtn");
 
 addTaskBtn.addEventListener("click", addTask);
 
@@ -51,3 +52,8 @@ function addTask() {
   li.appendChild(deleteBtn);
   taskList.appendChild(li);
   taskInput.value = "";
+
+  clearAllBtn.addEventListener("click", function () {
+  taskList.innerHTML = "";
+  updateTaskCount();
+});
