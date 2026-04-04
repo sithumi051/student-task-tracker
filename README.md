@@ -13,3 +13,5 @@ This project is used to practice Git, GitHub, branches, commits, push, pull, and
 
 ## New Section
 Practicing GitHub workflows
+
+Quickdraw practice change
